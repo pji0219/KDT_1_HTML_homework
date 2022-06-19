@@ -5,12 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        color: black;
+      }
+      h1 {
+        color: brown;
+      }
+      .markup {
+        color: blue;
+      }
+      #programing {
+        color: green;
+      }
+      span.js {
+        background-color: yellow;
+      }
+      .ts_td > .ts {
+        background-color: blue;
+      }
+      table .markup {
+        background-color: yellow;
+      }
+      .html + .css {
+        background-color: orange;
+      }
+      .js_link ~ td {
+        background-color: blue;
+      }
+      .html_link:hover {
+        color: red;
+      }
+      .css_link:active {
+        color: blue;
+      }
+      .react:focus {
+        background-color: skyblue;
+      }
+      .flamework:first-child {
+        color: gold;
+      }
+      .flamework:last-child {
+        background-color: red;
+      }
+      .flamework:nth-child(2) {
+        background-color: green;
+      }
+      .react::after {
+        content: '킹왕짱!';
+      }
+      .vue::before {
+        content: '좋은';
+      }
+      .lib[colspan='3'] {
+        background-color: gold;
+      }
+    </style>
   </head>
   <body>
     <h1>프론트엔드 기술들</h1>
     <table border="1">
       <tr>
-        <th colspan="3">마크업 언어</th>
+        <th colspan="3" class="markup">마크업 언어</th>
       </tr>
       <tr>
         <td>
@@ -27,14 +83,15 @@
         </td>
       </tr>
       <tr>
-        <td>HTML</td>
-        <td colspan="2">CSS</td>
+        <td class="html">HTML</td>
+        <td colspan="2" class="css">CSS</td>
       </tr>
       <tr>
         <td>
           <a
             href="https://developer.mozilla.org/ko/docs/Web/HTML"
             target="_blank"
+            class="html_link"
             >HTML문서</a
           >
         </td>
@@ -42,12 +99,13 @@
           <a
             href="https://developer.mozilla.org/ko/docs/Web/CSS"
             target="_blank"
+            class="css_link"
             >CSS문서</a
           >
         </td>
       </tr>
       <tr>
-        <th colspan="3">프로그래밍 언어</th>
+        <th colspan="3" id="programing">프로그래밍 언어</th>
       </tr>
       <tr>
         <td>
@@ -65,14 +123,14 @@
       </tr>
       <tr>
         <td>
-          <span>JavaScript</span>
+          <span class="js">JavaScript</span>
         </td>
-        <td colspan="2">
-          <span>TypeScript</span>
+        <td colspan="2" class="ts_td">
+          <span class="ts">TypeScript</span>
         </td>
       </tr>
       <tr>
-        <td>
+        <td class="js_link">
           <a
             href="https://developer.mozilla.org/ko/docs/Web/JavaScript"
             target="_blank"
@@ -88,7 +146,7 @@
         </td>
       </tr>
       <tr>
-        <th colspan="3">프레임워크/라이브러리</th>
+        <th colspan="3" class="lib">프레임워크/라이브러리</th>
       </tr>
       <tr>
         <td>
@@ -107,13 +165,9 @@
           />
         </td>
       </tr>
-      <tr>
-        <td>
-          <span>react</span>
-        </td>
-        <td>
-          <span>vue</span>
-        </td>
+      <tr class="flamework">
+        <td class="react">react</td>
+        <td class="vue">vue</td>
         <td>
           <span>angular</span>
         </td>
